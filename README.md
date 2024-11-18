@@ -37,7 +37,7 @@ The project is divided in:
 **- e2e:** This folder contains all things related with the test cases (spec files).<br />
 **- Pages:** In this folder we have the classes and methods that our tests are going to use to accomplish their goals. Files in this folder are divided based on their roles and functionalities.<br />
 **- Support:** The support file is a great place to put reusable behavior such as custom commands or global overrides that you want applied and available to all of your spec files. This file runs before every single spec file.<br />
-Page Selectors are also provided on a folder named "selectors" inside this one. There you can find all the selectors divided by pages, and use them on the spec file by importing them.<br />
+Page Selectors are also provided on a folder named "selectors" inside this one. There you can find all the elements selectors divided by pages, and use them on the spec file by importing them.<br />
 **- Screenshots:** this folder contains some screenshots taken after each test scenario's run. This can help to evidence 
 application's behaviour and examine/fix bugs. <br />
 **- Videos:** this folder contains some short videos taken after each test scenario's run. This can help to evidence 
