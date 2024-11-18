@@ -38,11 +38,6 @@ Cypress.Commands.add('verifyUrl', (url) => {
     cy.url().should('contain', url)
 });
 
-// Return Page's iFrame to get spec files visually better.
-Cypress.Commands.add('lumaIFrame', () => {
-    return iframe('.iframe-full-height');
-});
-
 // Check that Home Page elements are displayed on the page.
 Cypress.Commands.add('verifyHomePageElements', () => {
     cy.get(homePageSelectors.navBar).should('be.visible');
@@ -82,7 +77,7 @@ Cypress.Commands.add('verifyContactRequiredFields', () => {
     cy.iframe('.iframe-full-height').find(contactSelectors.howDidYouHearLabel).children().should('contain', '*')
 });
 
-// FIll the Contact Form fields with data.
+// Fill the Contact Form fields with data.
 // We can later parametrize this, sending custom data through reference to the command.
 Cypress.Commands.add('fillContactFormWithValidData', () => {
     cy.iframe('.iframe-full-height').find(contactSelectors.firstNameInputField).type('User')

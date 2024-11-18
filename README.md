@@ -71,3 +71,23 @@ application's behaviour and examine/fix bugs alongside with Screenshots.
 **Luma Health - 404 Page Message Validation**<br />
 - Navigating to a non-existent page and validating 404 code and message
   
+## Custom Commands
+Custom Commands are functions that helps Cypress developers to add/overwrite elements on the project, and they can be used anywhere, on any on spec file. Some Custom Commands used on this project are:
+
+**cy.verifyLoadingPage**<br />
+- Wait for the intercepted requests to be finished.
+
+**cy.verifyUrl**<br />
+- Validate the current url.
+
+**cy.verifyHomePageElements**<br />
+- Check that Home Page elements are displayed on the page.
+
+**cy.verifyContactFormElements**<br />
+- Check that all Contact Form fields are displayed on the page.
+
+**cy.verifyContactRequiredFields**<br />
+- Check the Contact Form fields that are required.
+
+**cy.fillContactFormWithValidData**<br />
+- Fill the Contact Form fields with data.
