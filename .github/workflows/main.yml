@@ -13,9 +13,10 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          # build: npm run build
-          # start: npm start
           browser: chrome
-      - name: Run CTRF annotations
-        run: npx github-actions-ctrf path-to-your-ctrf-report.json
-        if: always()
+      - name: Artifact Report
+        uses: actions/upload-artifact@v4  # upload test results
+        if: success() || failure()
+        with:
+          name: test-results
+          path: jest-junit.xml
