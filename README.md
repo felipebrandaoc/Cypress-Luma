@@ -44,3 +44,30 @@ Page Selectors are also provided on a folder named "selectors" inside this one. 
 application's behaviour and examine/fix bugs. <br />
 **- Videos:** this folder contains some short videos taken after each test scenario's run. This can help to evidence 
 application's behaviour and examine/fix bugs alongside with Screenshots.
+
+## Test Scenarios
+
+**Luma Health - Home Page Validation**<br />
+- Visiting HomePage and waiting for it to load successfully
+  
+**Luma Health - Navigation Links**<br />
+- Click on Platform - Redirects to "lumahealth.io/patient-success-platform/"
+- Click on About Us - Redirects to "lumahealth.io/about-us/"
+- Click on Who We Serve - Redirects to "lumahealth.io/who-we-serve/"
+- Click on Log in - Redirects to "next.lumahealth.io/login"
+- Click on Get a demo - Redirects to "lumahealth.io/book-a-demo/"
+
+**Luma Health - Contact Form**<br />
+- Verify that the Contact Form has loaded correctly
+- Verify required fields
+- Validate required fields alerts
+- Submit Contact Form Successfully
+
+**Luma Health - Responsive Design Testing**<br />
+- Testing on Desktop Viewport
+- Testing on iPad 2 Viewport
+- Testing on iPhone X Viewport
+  
+**Luma Health - 404 Page Message Validation**<br />
+- Navigating to a non-existent page and validating 404 code and message
+  
