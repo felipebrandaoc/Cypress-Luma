@@ -27,7 +27,7 @@ describe('Luma Health - Contact Form', () => {
     cy.verifyLoadingPage();
     cy.verifyUrl('lumahealth.io/book-a-demo/')
     cy.iframe('.iframe-full-height').find(contactSelectors.submitButton).click({force: true}) // Try to Submit Form with 9 empty required fields.
-    cy.iframe('.iframe-full-height').find('[class="hs-error-msg hs-main-font-element"]').should('have.length', 9) // Verify that 9 alerts are shown.
+    cy.iframe('.iframe-full-height').find('[class="hs-error-msg hs-main-font-element"]').should('have.length', 9).contains('Please complete this required field.') // Verify that 9 alerts are shown.
   });
 
   it('Submit Contact Form Successfully', () => {
