@@ -2,8 +2,10 @@
 
 This project was made using Cypress and Javascript Language. <br />
 Cypress iFrame plugin needed to be installed to handle some elements that were inside iFrames. <br />
-There's still room for improvement, for example, the selectors used to interact with application's elements. Most of the elements used on this project were text, classes or ids, but the best option would be to implement and use a data-cy selector, made specifically for automation purposes, and unique for each element on the screen. <br />
-Also, Page-Objects was not used in this case. On the other hand, Cypress Custom Commands have a very important role here.
+There's still room for improvement, for example, the selectors used to interact with application's elements. Most of the elements used on this project were texts, classes or ids, but the best option would be to implement and use a "data-cy" selector, made specifically for automation purposes, and unique for each element on the screen. <br />
+Also, Page-Objects was not used in this case. On the other hand, Cypress Custom Commands have a very important role here. 
+
+PS: cy.intercept(**) is being used to intercept page's requests, so we can later wait for them (cy.wait()) to check that the page is already fully loaded. But a better practice would be to get to know better the application itself and its requests, to improve performance and intercept specific requests instead of all of them.  
 
 To download this project dependencies just run the command below on your terminal:
 

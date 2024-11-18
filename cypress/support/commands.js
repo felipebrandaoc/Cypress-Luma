@@ -82,7 +82,8 @@ Cypress.Commands.add('verifyContactRequiredFields', () => {
     cy.iframe('.iframe-full-height').find(contactSelectors.howDidYouHearLabel).children().should('contain', '*')
 });
 
-// Check the Contact Form fields that are required.
+// FIll the Contact Form fields with data.
+// We can later parametrize this, sending custom data through reference to the command.
 Cypress.Commands.add('fillContactFormWithValidData', () => {
     cy.iframe('.iframe-full-height').find(contactSelectors.firstNameInputField).type('User')
     cy.iframe('.iframe-full-height').find(contactSelectors.lastNameInputField).type('Automation')
