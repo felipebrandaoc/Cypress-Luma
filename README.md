@@ -2,7 +2,7 @@
 
 This project was made using Cypress and Javascript Language. <br />
 Cypress iFrame plugin needed to be installed to handle some elements that were inside iFrames. <br />
-Some things could be better, for example, the selectors used to interact with application's elements. Most of the elements used on this project were text, classes or ids, but the best option would be to implement and use a data-cy selector, made specifically for automation purposes, and unique for each element on the screen. <br />
+There's still room for improvement, for example, the selectors used to interact with application's elements. Most of the elements used on this project were text, classes or ids, but the best option would be to implement and use a data-cy selector, made specifically for automation purposes, and unique for each element on the screen. <br />
 Also, Page-Objects was not used in this case. On the other hand, Cypress Custom Commands have a very important role here.
 
 To download this project dependencies just run the command below on your terminal:
