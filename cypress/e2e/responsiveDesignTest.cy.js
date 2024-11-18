@@ -12,7 +12,7 @@ describe('Responsive Design Testing', () => {
         cy.verifyHomePageElements(); // Validate that the most important Page's elements are already visible
     });
 
-    it.only('Testing on iPad 2 Viewport', () => {
+    it('Testing on iPad 2 Viewport', () => {
         // Set viewport to tablet size
         cy.viewport('ipad-2')
         cy.verifyLoadingPage();
