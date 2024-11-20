@@ -92,6 +92,6 @@ Custom Commands are functions that helps Cypress developers to add/overwrite ele
 **cy.fillContactFormWithValidData**<br />
 - Fill the Contact Form fields with data.
 
-  ## Continuous integration(CI)/Continuous delivery(CD)
+## Continuous integration(CI)/Continuous delivery(CD)
 This project is using GitHub Actions as the CI/CD tool. The script for running the job is described on project root, inside .github/workflows/main.yml file. <br />
 It uses the latest ubuntu build and cypress-io/github-action@v6. Everytime that anything is pushed to the project, all spec files are going to run, then some reports and evidences are gonna be showed when tests are finished.
